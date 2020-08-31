@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: black;
+  overflow: auto;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/bg.jpg);
+  min-height: 100%; */
+}
+
+.bigDog {
+  width: 66%;
+
+  position: relative;
+  z-index: 2;
+  top: 2px;
+  left: 16.5%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.bgimg {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 55%;
+}
+/*          SOCIAL MEDIA SECTION          */
+.social-media {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+svg {
+  color: white;
+}
+
+.social-media button {
+  border: none;
+  color: white;
+  height: 30%;
+  width: 11%;
+  background-color: transparent;
+  font-size: 65%;
+  opacity: 80%;
+  margin: 7%;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 60px;
+  width: 6.6%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  opacity: 70%;
+  margin: 3px;
+  border-bottom: 4px solid rgb(102, 102, 102);
+  border-right: 2px solid rgb(73, 73, 73);
+}
+
+.fa:hover {
+  opacity: 100%;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+/*      N A V     */
+
+nav {
+  width: 100%;
+  height: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+nav a {
+  display: block;
+  border: 1px solid red;
+  height: 100%;
+  padding: auto 10px;
+  width: 25%;
+  color: rgb(204, 204, 204);
+  background-color: red;
+  margin: 0 2px;
+  text-decoration: none;
+  border-bottom: 3px solid rgb(102, 102, 102);
+  border-right: 1px solid rgb(73, 73, 73);
+  flex-grow: 1;
+}
+
+.navBar nav a {
+  border: 1px solid red;
+  height: 100%;
+  width: 25%;
+  color: rgb(204, 204, 204);
+  background-color: red;
+  margin: 0 2px;
+  text-decoration: none;
+  border-bottom: 3px solid rgb(102, 102, 102);
+  border-right: 1px solid rgb(73, 73, 73);
+  flex-grow: 1;
+}
+
+/*          G A L L E R Y           */
+
+.gallery {
+  background: url(assets/grid.png), url(assets/top-image.png);
+  background-size: 85%;
+  border: 5px solid white;
+}
+
+.gallery img {
+}
+
+/*            A R T I C L E S           */
+
+.articles {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.words {
+  background-color: white;
+  flex-grow: 1;
+  margin: 5px;
+  padding: 25px 25px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+.words p {
+  font-size: 12px;
+  color: rgb(110, 110, 110);
+  line-height: 1.8;
+  padding: 10px 0px;
+}
+
+.words h3 {
+  padding: 5px 5px;
+  color: gray;
+}
+
+.words h6 {
+  color: gray;
+  padding: 5px 5px;
+}
+
+.words a {
+  display: block;
+  align-self: center;
+  margin-bottom: 0;
+  padding: 5px 0px;
+  color: red;
+  text-decoration: none;
+}
+
+/*           D U D E S               */
+
+.dudes {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "lance rodney tommy"
+    "steve steve tommy";
+}
+
+.lance {
+  background: url(assets/sk8er-4.png);
+  grid-area: lance;
+  background-size: 18em;
+  background-position: right;
+  /* grid-column: 1 / 2;
+  grid-row: 1 / 2; */
+}
+.rodney {
+  background: url(assets/sk8er-3.png);
+  background-size: 20em;
+  grid-area: rodney;
+
+  /* grid-column: 2/ 3;
+  grid-row: 1 / 2; */
+}
+.steve {
+  background: url(assets/sk8er-1.png);
+  background-size: 33em;
+  background-position: top center;
+  background-position: left;
+  grid-area: steve;
+
+  /* grid-column: 1 / 3;
+  grid-row: 2 / 3; */
+}
+.tommy {
+  background: url(assets/sk8er-2.png);
+  grid-area: tommy;
+  background-position: right;
+  background-size: 40em;
+  padding-top: 80px;
+  /* grid-column: 3 / 4;
+  grid-row: 1 / 3; */
+}
+.lance,
+.rodney,
+.steve,
+.tommy {
+  color: white;
+  padding: 10%;
+  border: 4px solid white;
+  margin: 4px;
+  display: flex;
+}
+
+.name h1 {
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+}
+/*          S K A T E B O A R D S         */
+.skateboards {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  background: white;
+}
+
+.skteboards img {
+  display: block;
+}
+
+/*       C O N T A C T S       */
+
+.contact {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.words {
+  flex-grow: 1;
+  background: white;
+  width: 50%;
+  margin: auto 0 auto 0;
+}
+
+.inputArea {
+  display: flex;
+  flex-flow: column nowrap;
+  flex-grow: 2;
+  justify-content: flex-start;
+  width: 50%;
+  background: white;
+  margin: 0 0;
+  padding: 5%;
+}
+
+.inputArea input,
+.inputArea textarea {
+  margin: 5px auto;
+  display: block;
+}
+
+.inputArea button {
+  background: red;
+  color: white;
+}
